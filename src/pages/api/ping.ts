@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { NextApiRequest, NextApiResponse } from 'next'
-import { conn } from '../../utils/database'
+import { conn } from "src/utils/database"
 
 type Data ={
     message: string;

@@ -18,5 +18,52 @@
         "titleBar.inactiveBackground": "#c0c0c099",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#C0C0C0"
+    "peacock.color": "#C0C0C0",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "line",
+        "foreground": "#fff",
+        "iconColour": "#fff",
+        "background": "#fff",
+        "fontStyle": "line",
+        "opacity": 0.1,
+        "gutterIcon": true
+    },
+    "todo-tree.general.tags": [
+        "SUCCESS",
+        "ERROR",
+        "BUG",
+        "FIXME",
+        "NOTE",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "SUCCESS": {
+            "icon": "check",
+            "iconColour": "#36cd1b"
+        },
+        "ERROR": {
+            "iconColour": "#cb0c0c"
+        },
+        "FIXME": {
+            "iconColour": "#fcfc69"
+        },
+        "BUG": {
+            "iconColour": "#fba554"
+        },
+        "NOTE": {
+            "icon": "note",
+            "iconColour": "#fcfc69"
+        },
+        "[ ]": {
+            "icon": "diff-removed",
+            "iconColour": "#cb0c0c"
+        },
+        "[x]": {
+            "icon": "tasklist",
+            "iconColour": "#36cd1b"
+        }
+    }
 }

@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { NextApiRequest, NextApiResponse } from 'next'
-import { conn } from '../../../utils/database'
+import { conn } from "src/utils/database"
 
 export default async(req: NextApiRequest, res: NextApiResponse) => {
    
@@ -9,7 +9,7 @@ export default async(req: NextApiRequest, res: NextApiResponse) => {
     switch (method) {
         case "GET":
             try {                
-                const query = "SELECT * FROM tasks";
+                const query = "SELECT * FROM tasks ORDER BY id ASC";
                 const response = await conn.query(query);
 
                 return res.status(200).json(response.rows);
